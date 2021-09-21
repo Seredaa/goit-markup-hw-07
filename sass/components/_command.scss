@@ -1,0 +1,109 @@
+.section-command {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.team-section {
+  background-color: var(--background-color);
+}
+
+.command {
+  display: flex;
+}
+
+.command-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-command {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.command-item-command {
+  font-weight: 7000;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.command-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.command-item-text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.command-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.command-text {
+  display: flex;
+  display: block;
+}
+
+.command-link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.command-text {
+  background-color: var(--main-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.command-social-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.join-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-item:not(last-child) {
+  margin-right: 10px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.command-social-icon:focus,
+.command-social-icon:hover {
+  fill: var(--main-color);
+  background-color: var(--logo-color);
+}
+
+.join-social-link:hover,
+.join-social-link:focus {
+  fill: var(--main-color);
+  background-color: var(--logo-color);
+}
