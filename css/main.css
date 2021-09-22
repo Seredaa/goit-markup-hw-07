@@ -388,7 +388,7 @@ ul {
   color: var(--logo-color);
 }
 
-.nav-item:not(:last-child) {
+.nav-contacts-item:not(:last-child) {
   margin-right: 50px;
   padding: 0;
 }
@@ -423,7 +423,7 @@ ul {
   margin-right: 10px;
 }
 
-.logo {
+.header-logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -698,6 +698,10 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input .form-input-svg:hover {
+  fill: var(--logo-color);
 }
 
 .benefits {
