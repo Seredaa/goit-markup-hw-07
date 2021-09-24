@@ -10,11 +10,7 @@
 }
 
 .clients-list {
-  display: flex;
   justify-content: space-between;
-}
-
-.clients-list {
   display: flex;
 }
 
@@ -30,13 +26,13 @@
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    fill: #2196f3;
+  }
 }
 
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid #2196f3;
-  fill: #2196f3;
-}
 .clients-icon {
   width: 140px;
   height: 60px;
