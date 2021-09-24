@@ -5,36 +5,36 @@
   margin-bottom: -30px;
 }
 
-.portfolio-about {
+.portfolio__about {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 
-.portfolio-item:not(:last-child) {
+.portfolio__item:not(:last-child) {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio-item:last-child {
+.portfolio__item:last-child {
   margin-left: 30px;
   margin-bottom: 30px;
 }
 
-.portfolio-item {
+.portfolio__item {
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.portfolio-about {
+.portfolio__about {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.portfolio-title {
+.portfolio__title {
   margin-bottom: 4px;
 }
 
-.portfolio-title {
+.portfolio__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
@@ -43,7 +43,7 @@
   margin-bottom: 0;
   color: #212121;
 }
-.portfolio-text {
+.portfolio__text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

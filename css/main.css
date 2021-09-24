@@ -348,7 +348,7 @@ ul {
   display: flex;
 }
 
-.nav-list-item {
+.nav-list__item {
   position: relative;
   justify-content: center;
   align-items: center;
@@ -356,11 +356,11 @@ ul {
   padding-top: 32px;
 }
 
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav-list-link {
+.nav-list__link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -373,7 +373,7 @@ ul {
   list-style: none;
 }
 
-.nav-list-link {
+.nav-list__link {
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
@@ -381,19 +381,21 @@ ul {
   letter-spacing: 0.02em;
   color: var(--title-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list__link:hover,
+.nav-list__link:focus {
   color: var(--logo-color);
 }
 
-.nav-contacts-item:not(:last-child) {
+.nav-contacts__item:not(:last-child) {
   margin-right: 50px;
   padding: 0;
 }
 
-.nav-contacts-link {
+.nav-contacts__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -408,22 +410,22 @@ ul {
   margin-left: auto;
 }
 
-.nav-contacts-link:hover {
+.nav-contacts__link:hover {
   text-decoration: underline;
   color: var(--logo-color);
 }
 
-.nav-contacts-link:focus {
+.nav-contacts__link:focus {
   text-decoration: underline;
   color: var(--logo-color);
 }
 
-.contacts-icon {
+.nav-contacts__icon {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.header-logo {
+.header__logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -438,7 +440,7 @@ ul {
   padding-bottom: 20px;
 }
 
-.logo-web {
+.logo__web {
   color: var(--title-color);
   font-family: "Raleway";
   font-weight: 700;
@@ -447,11 +449,11 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.logo-web-footer {
+.logo__web--white {
   color: var(--main-color);
 }
 
-.logo-footer {
+.logo__footer {
   margin-bottom: 20px;
   font-family: "Raleway";
   font-weight: 700;
@@ -808,12 +810,12 @@ ul {
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
   text-align: center;
 }
 
-.filter-item-btn {
+.filter__btn {
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
@@ -826,16 +828,16 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-item-btn {
+.filter__btn {
   cursor: pointer;
 }
 
-.filter-item-btn {
+.filter__btn {
   background-color: var(--background-color);
 }
 
-.filter-item-btn:hover,
-.filter-item-btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
   color: white;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -958,37 +960,37 @@ ul {
   margin-bottom: -30px;
 }
 
-.portfolio-about {
+.portfolio__about {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 
-.portfolio-item:not(:last-child) {
+.portfolio__item:not(:last-child) {
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.portfolio-item:last-child {
+.portfolio__item:last-child {
   margin-left: 30px;
   margin-bottom: 30px;
 }
 
-.portfolio-item {
+.portfolio__item {
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.portfolio-about {
+.portfolio__about {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.portfolio-title {
+.portfolio__title {
   margin-bottom: 4px;
 }
 
-.portfolio-title {
+.portfolio__title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
@@ -998,28 +1000,28 @@ ul {
   color: #212121;
 }
 
-.portfolio-text {
+.portfolio__text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
 
-.project-link {
+.project__link {
   display: block;
 }
 
-.project-link:focus,
-.project-link:hover {
+.project__link:focus,
+.project__link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-thumb {
+.project__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.project-description {
+.project__description {
   position: absolute;
   top: 0;
   left: 0;
@@ -1034,8 +1036,8 @@ ul {
   color: #fff;
 }
 
-.project-link:hover .project-description,
-.project-link:focus .project-description {
+.project__link:hover .project__description,
+.project__link:focus .project__description {
   transform: translateY(0);
 }
 
@@ -1098,7 +1100,7 @@ ul {
   font-style: normal;
 }
 
-.adress-company-street {
+.adress-company__street {
   font-family: "Roboto";
   font-size: 14px;
   line-height: 1.71x;
@@ -1109,7 +1111,7 @@ ul {
   font-style: normal;
 }
 
-.adress-link {
+.adress-company__link {
   font-family: "Roboto";
   font-size: 14px;
   line-height: 1.71;
@@ -1155,7 +1157,7 @@ ul {
   margin-left: 70px;
 }
 
-.join-title {
+.join__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
@@ -1166,12 +1168,12 @@ ul {
   color: #ffffff;
 }
 
-.join-list {
+.join__list {
   display: flex;
   margin-top: 20px;
 }
 
-.join-link {
+.join__link {
   height: 44px;
   width: 44px;
   border-radius: 50%;
@@ -1183,27 +1185,27 @@ ul {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join-link:focus,
-.join-link:hover {
+.join__link:focus,
+.join__link:hover {
   background-color: var(--logo-color);
 }
 
-.join-item:not(:last-child) {
+.join__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-icon {
+.join__social-icon {
   width: 20px;
   height: 20px;
   fill: var(--main-color);
 }
 
-.subscribe-btn-icon {
+.footer-form__icon {
   margin-left: 10px;
   background-color: var(--logo-color);
 }
 
-.subscribe-title {
+.subscribe__title {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -1217,7 +1219,7 @@ ul {
   margin-left: 70px;
 }
 
-.footer-input {
+.footer-form__input {
   width: 358px;
   margin-top: 20px;
   padding: 15px 16px;
@@ -1227,7 +1229,7 @@ ul {
   border-radius: 4px;
 }
 
-.footer-btn {
+.footer-form__btn {
   display: flex;
   margin-left: 12px;
   cursor: pointer;

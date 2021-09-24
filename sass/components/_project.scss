@@ -1,19 +1,19 @@
-.project-link {
+.project__link {
   display: block;
 }
 
-.project-link:focus,
-.project-link:hover {
+.project__link:focus,
+.project__link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-thumb {
+.project__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.project-description {
+.project__description {
   position: absolute;
   top: 0;
   left: 0;
@@ -28,7 +28,7 @@
   color: #fff;
 }
 
-.project-link:hover .project-description,
-.project-link:focus .project-description {
+.project__link:hover .project__description,
+.project__link:focus .project__description {
   transform: translateY(0);
 }
